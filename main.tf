@@ -28,5 +28,10 @@ resource "aws_instance" "ubuntu" {
 
   tags {
     Name = "Provisioned-by-Terraform"
+    project = "project A"
+    provider = "provider B"
+    platform = "Ubuntu"
+    appid = "123"
+    datatype = "raw"
   }
 }
