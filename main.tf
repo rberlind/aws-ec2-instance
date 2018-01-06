@@ -30,3 +30,7 @@ resource "aws_instance" "ubuntu" {
     Name = "Provisioned-by-Terraform"
   }
 }
+
+output "public_dns" {
+  value = "${aws_instance.ubuntu.public_dns}"
+}
