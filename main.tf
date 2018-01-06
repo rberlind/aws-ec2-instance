@@ -4,7 +4,7 @@ terraform {
 
 variable "aws_region" {
   description = "AWS region"
-  default = "us-east-1"
+  default = "us-west-1"
 }
 
 variable "ami_id" {
