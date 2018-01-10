@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "AWS region"
-  default = "us-west-1"
+  default = "us-east-1"
 }
 
 variable "ami_id" {
@@ -15,5 +15,5 @@ variable "instance_type" {
 
 variable "name" {
   description = "name to pass to Name tag"
-  default = "Provisioned by Terraform"
+  default = "Provisioned quickly by Terraform"
 }
