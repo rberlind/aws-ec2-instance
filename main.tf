@@ -3,7 +3,8 @@ terraform {
 }
 
 provider "aws" {
-  region = "${var.aws_region}"
+  #region = "${var.aws_region}"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "ubuntu" {
