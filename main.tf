@@ -6,6 +6,11 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
+provider "aws" {
+  alias = "hard-coded"
+  region = "us-east-1"
+}
+
 resource "aws_instance" "ubuntu" {
   ami           = "${var.ami_id}"
   instance_type = "${var.instance_type}"
