@@ -8,7 +8,7 @@ provider "aws" {
 
 provider "aws" {
   alias = "hard-coded"
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 resource "aws_instance" "ubuntu" {
