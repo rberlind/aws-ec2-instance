@@ -20,3 +20,7 @@ resource "aws_instance" "ubuntu" {
     Name = "${var.name}"
   }
 }
+
+module "nested" {
+  source = "./module"
+}
