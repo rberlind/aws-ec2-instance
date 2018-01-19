@@ -17,3 +17,7 @@ variable "name" {
   description = "name to pass to Name tag"
   default = "Provisioned quickly by Terraform"
 }
+
+variable "key_name" {
+  description = "name of the SSH key for accessing the instance"
+}
