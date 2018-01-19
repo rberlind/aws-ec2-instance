@@ -21,3 +21,8 @@ variable "name" {
 variable "key_name" {
   description = "name of the SSH key for accessing the instance"
 }
+
+variable "volume_size" {
+  description = "size of root device"
+  default = "10"
+}
