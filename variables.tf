@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "name" {
   description = "name to pass to Name tag"
-  default = "Provisioned quickly by Terraform"
+  default = "Provisioned very quickly by Terraform"
 }
 
 variable "key_name" {
