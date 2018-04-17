@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "name" {
   description = "name to pass to Name tag"
-  default = "Provisioned quickly by Terraform"
+  default = "Provisioned very quickly by Terraform"
 }
 
 variable "key_name" {
@@ -23,6 +23,6 @@ variable "key_name" {
 }
 
 variable "volume_size" {
-  description = "size of root device"
+  description = "the size of root device"
   default = "10"
 }

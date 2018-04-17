@@ -1,9 +1,5 @@
 terraform {
-  required_version = ">= 0.11.0"
-  backend "atlas" {
-    name         = "SolutionsEngineering/aws-ec2-dev"
-    address = "https://roger-ptfe.hashidemos.io"
-  }
+  required_version = ">= 0.11.1"
 }
 
 provider "aws" {
