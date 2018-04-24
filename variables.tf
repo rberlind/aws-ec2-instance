@@ -27,7 +27,7 @@ variable "volume_size" {
   default = "10"
 }
 
-variable "vault_address" {
+variable "vault_addr" {
   description = "address of the Vault server"
   default = "http://kubernetes-vault-elb-232188935.us-east-1.elb.amazonaws.com:8200"
 }
