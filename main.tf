@@ -13,7 +13,7 @@ resource "aws_instance" "ubuntu" {
   associate_public_ip_address = "true"
   tags {
     Name = "${var.name}"
-    owner = "roger@hashicorp.com"
-    ttl = "-1"
+    owner = "bboockford@hashicorp.com"
+    ttl = "8"
   }
 }
