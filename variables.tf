@@ -24,5 +24,5 @@ variable "key_name" {
 
 variable "volume_size" {
   description = "the size of root device"
-  default = "10"
+  default = "25"
 }
