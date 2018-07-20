@@ -10,7 +10,7 @@ variable "ami_id" {
 
 variable "instance_type" {
   description = "type of EC2 instance to provision."
-  default = "t2.xlarge"
+  default = "t2.small"
 }
 
 variable "name" {
@@ -24,5 +24,5 @@ variable "key_name" {
 
 variable "volume_size" {
   description = "the size of root device"
-  default = "25"
+  default = "30"
 }
