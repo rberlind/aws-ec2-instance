@@ -17,3 +17,15 @@ resource "aws_instance" "ubuntu" {
     ttl = "-1"
   }
 }
+
+resource "aws_instance" "ubuntu2" {
+  ami           = "${var.ami_id}"
+  instance_type = "${var.instance_type}"
+  availability_zone = "${var.aws_region}b"
+  associate_public_ip_address = "true"
+  tags {
+    Name = "${var.name}-2"
+    owner = "roger@hashicorp.com"
+    ttl = "-1"
+  }
+}
