@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.11.7"
+  required_version = ">= 0.11.8"
 }
 # Set VAULT_TOKEN environment variable
 provider "vault" {
