@@ -31,7 +31,9 @@ resource "aws_instance" "ubuntu" {
   instance_type = "${var.instance_type}"
   availability_zone = "${var.aws_region}a"
   key_name = "${var.key_name}"
-  #associate_public_ip_address = false
+  associate_public_ip_address = "false"
+  vpc_security_group_ids = ["sg-001b4a79ab0a3d3de"]
+  subnet_id = "subnet-040d7d3af2ef8f493"
   root_block_device {
     volume_size = "${var.volume_size}"
   }
