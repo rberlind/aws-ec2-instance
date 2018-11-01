@@ -31,7 +31,7 @@ resource "aws_instance" "ubuntu" {
   instance_type = "${var.instance_type}"
   availability_zone = "${var.aws_region}a"
   key_name = "${var.key_name}"
-  associate_public_ip_address = "false"
+  associate_public_ip_address = false
   root_block_device {
     volume_size = "${var.volume_size}"
   }
