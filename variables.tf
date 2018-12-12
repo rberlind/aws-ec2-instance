@@ -15,14 +15,5 @@ variable "instance_type" {
 
 variable "name" {
   description = "name to pass to Name tag"
-  default = "Provisioned very quickly by Terraform"
-}
-
-variable "key_name" {
-  description = "name of the SSH key for accessing the instance"
-}
-
-variable "volume_size" {
-  description = "the size of root device"
-  default = "10"
+  default = "Provisioned by Terraform"
 }
