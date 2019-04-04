@@ -37,5 +37,6 @@ resource "aws_instance" "ubuntu" {
   }
   tags {
     Name = "${var.name}"
+    Owner = "Roger"
   }
 }
