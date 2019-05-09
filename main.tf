@@ -27,8 +27,26 @@ provider "aws" {
 }
 
 resource "aws_instance" "ubuntu" {
+  count = 2
   ami           = "${var.ami_id}"
   instance_type = "${var.instance_type}"
+  availability_zone = "${var.aws_region}a"
+  key_name = "${var.key_name}"
+  associate_public_ip_address = "true"
+  root_block_device {
+    volume_size = "${var.volume_size}"
+  }
+  tags {
+    Name = "${var.name}"
+    #owner = "Roger"
+    ttl = "24"
+  }
+}
+
+resource "aws_instance" "ubuntu-too" {
+  count = 2
+  ami           = "${var.ami_id}"
+  instance_type = "t2.micro"
   availability_zone = "${var.aws_region}a"
   key_name = "${var.key_name}"
   associate_public_ip_address = "true"
