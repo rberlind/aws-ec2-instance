@@ -6,6 +6,11 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
+resource "random_integer" "rand" {
+  min     = 1
+  max     = 1000
+}
+
 resource "aws_instance" "ubuntu" {
   ami           = "${var.ami_id}"
   instance_type = "${var.instance_type}"
@@ -15,6 +20,6 @@ resource "aws_instance" "ubuntu" {
     Name = "${var.name}"
     owner = "roger@hashicorp.com"
     ttl = "48"
-    ID = "${self.id}"
+    Random = "${random_integer.rand.result}"
   }
 }
