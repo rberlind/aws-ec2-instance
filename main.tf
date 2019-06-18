@@ -15,5 +15,6 @@ resource "aws_instance" "ubuntu" {
     Name = "${var.name}"
     owner = "roger@hashicorp.com"
     ttl = "48"
+    ID = "${self.id}"
   }
 }
