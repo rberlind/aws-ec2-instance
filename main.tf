@@ -14,6 +14,6 @@ resource "aws_instance" "ubuntu" {
   tags {
     Name = "${var.name}"
     owner = "roger@hashicorp.com"
-    ttl = "48"
+    ttl = "24"
   }
 }
