@@ -12,7 +12,7 @@ resource "aws_instance" "ubuntu" {
   availability_zone = "${var.aws_region}b"
   associate_public_ip_address = "true"
   root_block_device {
-    volume_size = 10
+    volume_size = "10"
   }
   tags {
     Name = "${var.name}"
