@@ -17,3 +17,7 @@ variable "name" {
   description = "name to pass to Name tag"
   default = "Provisioned by Terraform"
 }
+
+variable "associate_public_ip_address" {
+  default = true
+}
