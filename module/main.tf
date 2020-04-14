@@ -10,7 +10,8 @@ resource "aws_instance" "ubuntu" {
   associate_public_ip_address = var.associate_public_ip_address
 
   tags = {
-    Name = var.name
+    Name  = var.name
+    ttl   = 24
     Owner = "rberlind"
   }
 }
